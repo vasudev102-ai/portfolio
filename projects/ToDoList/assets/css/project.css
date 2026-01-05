@@ -1,0 +1,150 @@
+/* ============================
+   Font's download for onward use
+============================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+*{
+	
+.landing-wrapper{
+    width:90%;
+    max-width:1100px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border-radius:20px;
+    padding:50px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.25);
+    margin: 60px auto;
+}
+
+.header{
+    margin-bottom: 35px;
+}
+
+	
+.left p{
+font-size:0.95rem;
+line-height:1.7;
+opacity:0.9;
+margin-bottom:20px;
+}
+.features{
+list-style:none;
+}
+.features li{
+margin-bottom:10px;
+font-size:0.9rem;
+}
+.features li::before{
+content:"✔";
+color:#00e0ff;
+margin-right:8px;
+}
+.right{
+background: rgba(0,0,0,0.12);
+border-radius:16px;
+padding:35px;
+text-align:center;
+}
+.right h3{
+font-size:1.4rem;
+margin-bottom:20px;
+}
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 30px;
+border-radius:30px;
+background: linear-gradient(135deg, #00e0ff, #00ffa2);
+color:#000;
+font-size:0.9rem;
+font-weight:500;
+text-decoration:none;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover{
+transform: translateY(-2px);
+box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}
+.footer{
+margin-top:40px;
+text-align:center;
+font-size:0.8rem;
+opacity:0.6;
+}
+@media(max-width:900px){
+.content{
+grid-template-columns:1fr;
+text-align:center;
+}
+.left{
+order:2;
+}
+.right{
+order:1;
+}
+}
+/* =========================
+   Case Study – Page Layout
+   ========================= */
+.case-study-layout{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+}
+
+.case-study-card{
+    max-width: 1100px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 45px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+.case-study-card h1{
+	text-align: center;
+}
+.case-study-section{
+    margin-bottom: 40px;
+}
+
+.case-study-section h2{
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.case-study-section p,
+.case-study-section li{
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+.case-study-cta{
+    margin-top: 40px;
+    text-align: center;
+}
+.styled-line {
+  border: none; /* Removes the default border */
+  height: 2px; /* Sets the thickness of the line */
+  background-color: #333; /* Sets the color */
+  width: 49%; /* Sets the width (default is 100%) */
+  margin: 2rem auto; /* Centers the line and adds spacing */
+}
+.cs-shot {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.cs-shot img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.cs-caption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+}

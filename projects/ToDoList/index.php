@@ -1,0 +1,64 @@
+<?php
+// index.php – ToDoList Case Study Landing Page
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList App – Case Study</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/project.css">
+</head>
+
+<body>
+
+<div class="landing-wrapper">
+
+    <div class="header">
+        <h1>ToDoList Web Application</h1>
+        <p>A simple, scalable task management system – Case Study</p>
+    </div>
+
+    <div class="content">
+
+        <div class="left">
+            <h2>About the Project</h2>
+            <p>
+                This ToDoList application is designed to help users manage daily tasks efficiently.
+                It focuses on clean UI, user-wise data handling, and a solid backend foundation.
+            </p>
+
+            <ul class="features">
+                <li>User Login & Sign-Up</li>
+                <li>Task Upload and Listing</li>
+                <li>AJAX-based Data Fetching</li>
+                <li>Scalable Architecture</li>
+                <li>Future-ready Alert System</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <h3>Case Study Focus</h3>
+            <p>
+                This project demonstrates practical full-stack skills with emphasis on
+                backend logic, database handling, and SPA-style interaction.
+            </p>
+
+            <a href="case-study.php" class="btn">View Case Study</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 ToDoList Project | Case Study
+    </div>
+
+</div>
+
+</body>
+</html>
