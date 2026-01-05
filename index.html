@@ -216,20 +216,17 @@
 			<li> 📞Phone: +91-9971050529</li>
 		</ul>
 		</div>
-	<div class="SLitem">
-		
-		<form class="contact-form" action="send_message.php" method="POST">
-			<label for="user_name">Your Name:</label><br>
-			<input type="text" name="name" id="user_name" required><br>
-			<label for="email">Your Email:</label><br>
-			<input type="email" name="email" id="email" required><br>
-			<label for="message">Message:</label><br>
-			<textarea id="message"name="message" class="msgContact"></textarea><br>		
-			<button type="submit" class="submit-link">Send Message</button>
-
-		</form>
-		
-  
+	<div class="SLitem">		
+		<form class="contact-form" method="POST" data-netlify="true">
+  		<input type="hidden" name="form-name" value="contact">
+  		<label for="user_name">Your Name:</label><br>
+  		<input type="text" name="name" id="user_name" required><br>
+  		<label for="email">Your Email:</label><br>
+  		<input type="email" name="email" id="email" required><br>
+  		<label for="message">Message:</label><br>
+  		<textarea id="message" name="message" class="msgContact" required></textarea><br>
+  		<button type="submit" class="submit-link">Send Message</button>
+		</form>  
 	</div>
 	</div>
   </div>
