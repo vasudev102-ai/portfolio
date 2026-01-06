@@ -1,0 +1,173 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #2b2b2b;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 20px 20px 50px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 16px;
+    -webkit-text-stroke: 0.5px red; /* A 1px black outline */
+    color: white; /* The fill color of the text */
+	text-shadow: 
+    2px 1.5px 5px lightblue;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  opacity: 0.9;
+  font-size:18px;
+}
+
+/* ---------- Story Row and Cards ---------- */
+.story-row {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Reverse layout */
+.story-row.reverse .text-card {
+  order: 2;
+}
+
+.story-row.reverse .image-card {
+  order: 1;
+}
+
+
+
+
+/*.story-card {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.story-card.reverse {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+
+.story-card.reverse > * {
+  direction: ltr;
+}*/
+
+/* ---------- Cards ---------- */
+.card {
+   background: linear-gradient(145deg, #3b3b3b, #2f2f2f);
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.3s ease;
+}
+
+/* Text Card */
+.text-card h2 {
+  color: #00FFFF;
+  margin-bottom: 16px;
+}
+
+.text-card:hover h2 {
+  color: #7FFFD4;
+}
+.text-card p {
+  transition: color 0.3s ease;
+}
+
+.text-card p:hover {
+  color: #f5f5f5;
+}
+
+
+/* Image Card */
+.image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.08);
+}
+/* ---------- Final CTA ---------- */
+.project-cta {
+  max-width: 900px;
+  margin: 120px auto 80px;
+  padding: 60px 40px;
+  text-align: center;
+
+  background: linear-gradient(135deg, #2f2f2f, #3a3a3a);
+  border-radius: 20px;
+}
+
+.project-cta h2 {
+  color: #4dd0e1;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.project-cta p {
+  color: #ddd;
+  font-size: 17px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 30px;
+
+  background: #4dd0e1;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #80deea;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .story-card,
+  .story-card.reverse {
+    grid-template-columns: fr;
+  }
+
+  .hero {
+    padding: 80px 20px 60px;
+  }
+}

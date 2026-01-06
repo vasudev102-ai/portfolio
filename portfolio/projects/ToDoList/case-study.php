@@ -1,0 +1,116 @@
+<?php
+// Case Study Page – no backend logic required
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList Web Application – Case Study</title>
+ 
+ <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body>
+
+<div class="case-study-layout">
+
+     <div class="case-study-card">
+
+        <h1>ToDoList Web Application – Case Study</h1>
+		<hr class="styled-line">
+        <p style="text-align: center;">A simple, scalable task management system – Case Study</p>
+
+         <section class="case-study-section">
+            <h2>📌 Problem Statement</h2>
+            <p>
+People often struggle to keep up with their commitments as they lose track of dates and time-sensitive tasks. We tried to Create and
+app that remind user for the tasks and the target date.
+            </p>
+		<div class="cs-shot">
+  <img src="./assets/imgs/todolist-login.png" alt="ToDoList Login Screen">
+  <p class="cs-caption">
+  Login and authentication screen (initial user entry point)
+</p>
+
+</div>
+
+		
+        </section>
+
+         <section class="case-study-section">
+            <h2>🎯 Objective</h2>
+            <ul>
+                <li>Create a clean, responsive UI</li>
+                <li>Ensure mobile-first compatibility</li>
+                <li>Keep design minimal and readable</li>
+            </ul>
+			<div class="cs-shot">
+    <img src="assets/imgs/UploadATask.png" alt="Upload a Task">
+    <p class="cs-caption">User to upload a tasks</p>
+  </div>
+        </section>
+
+         <section class="case-study-section">
+            <h2>🛠 Technologies Used</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox & Media Queries)</li>
+                <li>PHP (Structure readiness)</li>
+				<li>JavaScript </li>
+				<li>MySQL </li>
+            </ul>
+        </section>
+
+         <section class="case-study-section">
+            <h2>⚙️ Approach</h2>
+            <p>
+                The layout was designed using Flexbox with a mobile-first mindset.
+                PHP and MySQL were used for future scalability, even though the current
+                implementation is static. AJAX was used to fetch and update tasks 
+				dynamically without full page reloads.
+            </p>
+			<div class="cs-shot">
+    <img src="assets/imgs/todolist-CompletedTasks.png" alt="Task Dashboard">
+    <p class="cs-caption">Main task dashboard showing completed tasks</p>
+  </div>
+        </section>
+
+         <section class="case-study-section">
+            <h2>📈 Learnings</h2>
+            <ul>
+                
+  <li>Understood the importance of mobile-first design and responsive layouts using Flexbox.</li>
+  <li>Learned how SPA-style navigation improves user experience by avoiding full page reloads.</li>
+  <li>Gained hands-on experience with structuring frontend and backend logic separately.</li>
+  <li>Improved understanding of AJAX-based data fetching and dynamic UI updates.</li>
+  <li>Realized the value of clean UI and minimal design for productivity applications.</li>
+
+            </ul>
+        </section>
+		
+ <section class="case-study-section">
+            <h2>🚀 Future Enhancements</h2>
+            <ul>
+  <li>Implement task reminders and alerts for time-sensitive tasks.</li>
+  <li>Add task priority levels (High / Medium / Low).</li>
+  <li>Introduce user authentication with session management.</li>
+  <li>Enable task search and filter by date or status.</li>
+  <li>Convert the application into a full REST-based backend.</li>
+</ul>
+        </section>
+
+        <div class="case-study-cta">
+            <a href="index.php" class="btn">⬅ Back to Overview</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
