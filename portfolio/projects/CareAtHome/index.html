@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care @ Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="emergency-bar">
+  <div class="emergency-container">
+    
+    <div class="emergency-logo">
+      <img src="images/Logo1.png" alt="Care At Home">
+    </div>
+
+    <div class="emergency-call">
+      📞 <a href="tel:+919999999999">24×7 Emergency: +91 99999 99999</a>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="header-container">
+        <div class="logo"> <!-- logo goes here -->
+            
+        </div>
+        <nav class="menu"> <!-- menu goes here -->
+            <ul>
+                <li><a href="#hero">Home</a></li>
+				<li><a href="#about"><span class="label-desktop">About Us</span>
+										<span class="label-mobile">About</span></a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#process"><span class="label-desktop">How It Works</span>
+										<span class="label-mobile">Process</span></a></li>
+				<li><a href="#contact" class="open-form" data-title="Book A Nurse">
+									<span class="label-desktop">Book A Nurse</span>
+										<span class="label-mobile">Book</span></a></li>
+				<li><a href="#contact" class="open-form" data-title="Contact Us">
+									<span class="label-desktop">Contact Us</span>
+										<span class="label-mobile">Contact</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+		<div class="container">
+			<h1>Care At Home : We undertake the family touch care for your respected elders.</h1>
+			<p class="hero-tagline">
+			An integrated approach to physical, mental & emotional health care and  counseling for
+			those who are your Loving Ones.
+			</p>
+			<p class="hero-location">
+			Office in Faridabad (Haryana)
+			</p>
+			<a href="#contact" class="btn-primary">Contact Us</a>
+		</div>
+		</section>
+		
+		<!-- Video Section -->
+		<section id="about">
+		<div class="container video-wrapper">
+			<div class="video-thumbnail" id="openVideo">
+			<img src="assets/imgs/video-poster.jpg" alt="WML Wellness Introduction Video">
+			<span class="play-btn">▶</span>
+		</div>
+
+<div class="video-modal" id="videoModal">
+  <div class="video-content">
+    <span class="close-video" id="closeVideo">&times;</span>
+
+    <video controls>
+      <source src="assets/videos/CareAtHome4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+		<div class="video-text">
+			<h2>About Care At Home</h2>
+			<p>At Care At Home, we believe true healing begins where one feels safest — at home. 
+			We extend the warmth, dignity, and reassurance of family care to elders and patients 
+			who need medical or daily assistance, without removing them from their familiar 
+			surroundings. Our services are designed to provide comfort, stability, and peace of 
+			mind for both patients and their families.
+			</p>
+			<p>
+             Our approach goes beyond routine nursing. We focus on the physical, emotional, and 
+			 mental well-being of every individual through compassionate, professional, and 
+			 dependable care. Whether it is elder care, post-hospital recovery, chronic condition 
+			 support, or short-term assistance, our trained caregivers serve with patience, empathy, 
+			 and respect — treating every person as family.
+            </p>
+			<p class="about-quote">"Because care is not just about treatment — it is about presence, patience, and compassion."</p>
+		</div>
+		</div>
+		</section>
+
+        <!-- Motto
+        <section id="motto">
+  <div class="container">
+    <h2 class="section-title">Our Philosophy</h2>
+
+    <p class="motto-text">
+      You cannot address chronic illness, emotional pain, or life challenges
+      without understanding the whole person and the daily stresses they carry.
+      Healing begins when mind, body, and lived experience are seen together.
+    </p>
+
+    <blockquote>
+      “He who has a WHY to live can bear almost any HOW.”  
+      <span>— Friedrich Nietzsche</span>
+    </blockquote>
+
+    <blockquote>
+      “Care for your psyche… know thyself, for once we know ourselves,
+      we may learn how to care for ourselves.”  
+      <span>— Socrates</span>
+    </blockquote>
+  </div>
+</section>
+ -->
+
+        <!-- Services Preview -->
+        <section id="services">
+  <div class="container">
+    <h2 class="section-title">Services Offered</h2>
+
+    <div class="services-grid">
+      <div class="service-card" data-service="psychiatry">
+        <h3>Elderly & Assisted <br>Care</h3>
+      </div>
+
+      <div class="service-card" data-service="counselling">
+        <h3>Post-Treatment <br>& Recovery Care</h3>
+      </div>
+
+      <div class="service-card" data-service="rehab">
+        <h3>Medical Support Facilities<br>at Home</h3>
+      </div>
+
+      <div class="service-card" data-service="holistic">
+        <h3>Continuous Monitoring <br>& Coordination</h3>
+      </div>
+    </div>
+
+    
+    <div id="service-details" class="service-details">
+      <ul id="details-list"></ul>
+    </div>
+
+  </div>
+</section>
+ <section class="who-we-serve-cta">
+  <div class="container">
+    <h2 class="section-title">Who Can Benefit From Our Services?</h2>
+
+    <div class="serve-cta-wrapper">
+      <ul class="serve-list">
+        <li>Senior citizens living alone</li>
+        <li>Post-hospital discharge patients</li>
+        <li>Bedridden or mobility-restricted patients</li>
+        <li>Families needing short-term care support</li>
+        <li>Working families caring for elders</li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Not sure what care you need?</h3>
+        <p>
+          Speak to us and we’ll help you understand the right care plan —
+          with clarity, compassion, and transparent pricing.
+        </p>
+        <a href="#contact" class="cta-button">Request a Call Back</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+
+    <div class="steps-wrapper">
+      <div class="step-card">
+        <div class="step-icon">📞</div>
+        <h3>Call or Submit Enquiry</h3>
+        <p>Reach out to us via phone or enquiry form to get started.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon">📝</div>
+        <h3>Understand Patient Requirements</h3>
+        <p>We carefully assess medical, emotional, and daily care needs.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-icon">👩‍⚕️</div>
+        <h3>Assign Trained Professional</h3>
+        <p>A qualified caregiver or medical professional is assigned.</p>
+      </div>
+
+		<div class="step-card">
+			<div class="step-icon">💬</div>
+			<h3>Care Plan & Pricing Discussion</h3>
+			<p>Transparent discussion on services, duration, and cost.</p>
+      </div>
+
+
+      <div class="step-card">
+        <div class="step-icon">🏡</div>
+        <h3>Care Begins at Your Home</h3>
+        <p>Reliable, compassionate care starts in the comfort of home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+	
+	<section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <h2 id="formTitle" >Contact Us</h2>
+    <p class="contact-intro">
+      We’re here to answer your questions and help you take the next step
+      towards the comfort of your and your loved ones. Reach out to us using the form below.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Phone Number (optional)" />
+        <textarea rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Details
+      <div class="contact-details">
+        <h4>Our Locations</h4>
+        <p>
+          <strong>Holly Springs, NC</strong><br>
+          382 Raleigh St.<br>
+          Holly Springs, NC 27540
+        </p>
+
+        <p>
+          <strong>Cary, NC (Opening 2026)</strong><br>
+          201 Mearleaf Place<br>
+          Cary, NC 27540
+        </p>
+
+        <p class="contact-info">
+          📞 917-334-8512<br>
+          ✉️ info@wmlwellness.com
+        </p>
+      </div>  -->
+
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+ <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Brand & About -->
+    <div class="footer-col">
+      <img src="images/Logo1.png" alt="Care At Home" class="footer-logo">
+      <p>
+        Care At Home provides reliable, compassionate healthcare services
+        delivered at your doorstep — because healing feels best at home.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li>Elderly Care</li>
+        <li>Post-Surgery Care</li>
+        <li>Patient Attendant</li>
+        <li>Physiotherapy at Home</li>
+        <li>Doctor Visit on Call</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p><strong>24×7 Emergency:</strong></p>
+      <p class="footer-phone">📞 +91 99999 99999</p>
+      <p>Email: careathome@email.com</p>
+      <p>Serving homes across the city</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2026 Care At Home. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+  const openVideoBtn = document.getElementById("openVideo");
+  const videoModal = document.getElementById("videoModal");
+  const closeVideoBtn = document.getElementById("closeVideo");
+
+  function closeVideoModal() {
+    videoModal.style.display = "none";
+
+    const video = videoModal.querySelector("video, iframe");
+    if (video) {
+      if (video.tagName === "IFRAME") {
+        video.src = video.src; // stop YouTube
+      } else {
+        video.pause(); // stop HTML5 video
+      }
+    }
+  }
+
+  openVideoBtn.onclick = () => {
+    videoModal.style.display = "block";
+  };
+
+  closeVideoBtn.onclick = closeVideoModal;
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeVideoModal();
+    }
+  });
+  
+
+ const servicesData = {
+    psychiatry: [
+      "Initial psychiatric evaluations",
+      "Medication management and follow-ups",
+      "Treatment for mood and anxiety disorders",
+      "Collaborative care with medical providers"
+    ],
+    counselling: [
+      "Individual therapy",
+      "Couples and family counseling",
+      "Child and adolescent therapy",
+      "Trauma-informed care"
+    ],
+    rehab: [
+      "Substance use assessment",
+      "Relapse prevention planning",
+      "Outpatient rehabilitation support",
+      "Family education and support"
+    ],
+    holistic: [
+      "Mind-body wellness approaches",
+      "Animal-assisted therapy",
+      "Equine-assisted psychotherapy",
+      "Integrative healing practices"
+    ]
+  };
+
+  const cards = document.querySelectorAll(".service-card");
+  const detailsBox = document.getElementById("service-details");
+  const detailsList = document.getElementById("details-list");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      const key = card.dataset.service;
+      detailsList.innerHTML = "";
+
+      servicesData[key].forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        detailsList.appendChild(li);
+      });
+
+      detailsBox.style.display = "block";
+      detailsBox.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+  
+</script>
+
+<script>
+  document.querySelectorAll('.open-form').forEach(link => {
+    link.addEventListener('click', function () {
+      const title = this.getAttribute('data-title');
+      document.getElementById('formTitle').textContent = title;
+    });
+  });
+</script>
+
+
+</body>
+</html>
