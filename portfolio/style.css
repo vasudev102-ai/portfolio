@@ -232,6 +232,30 @@ align-items: center;/* vertical centering */background: rgba(0, 0, 0, 0.4);/*tra
 .project-link:hover {
   text-decoration: underline;
 }
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+.contact-list a {
+  color: #0b5ed7;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 5px;
+}
 
 }
 

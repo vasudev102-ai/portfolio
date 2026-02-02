@@ -1,0 +1,805 @@
+/* ------------------
+   Base Reset
+------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2e2e2e;
+    background-color: #fafafa;
+}
+
+/* ------------------
+   Typography
+------------------- */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1f1f1f;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    max-width: 720px;
+    margin-bottom: 1.2rem;
+}
+
+/* ------------------
+   Layout Spacing
+------------------- */
+section {
+    padding: 4rem 2rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ------------------
+   Header (basic)
+------------------- */
+header {
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+nav {
+  width: 100%;
+}
+
+/* ------------------
+   Buttons
+------------------- */
+.btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #6f8f72;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(#ffffff, #ffe6e6);
+}
+/* LOGO */
+.logo img {
+    max-height: 200px;
+	max-width: 200px;
+}
+
+/* MENU */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  color: #00698f;
+  text-decoration: underline;
+}
+
+#hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+    url("../imgs/CrAtH-6a.png") center/65% no-repeat;
+	color: #ffffff;
+	border-radius: 16px;
+}
+#hero p {
+  color: rgba(255, 255, 255, 0.9);
+}
+#hero h1{
+  color: #ffffff;
+}
+#hero .container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+#about-video {
+  padding: 4rem 0;
+  background: #f7f7f6;
+}
+
+.video-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  background: rgba(0,0,0,0.25);
+  border-radius: 8px;
+}
+
+.play-btn:hover {
+  background: rgba(0,0,0,0.35);
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 999;
+}
+
+.video-content {
+  max-width: 800px;
+  margin: 8vh auto;
+  position: relative;
+}
+
+.video-content video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close-video {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.video-modal-content{
+  padding: 20px;   /* instead of 40–60px */
+  max-width: 900px;
+  border-radius: 12px;
+}
+video, iframe {
+  border-radius: 8px;
+}
+.video-close {
+  top: -12px;
+  right: -12px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.about-quote {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #6b7280; /* soft neutral */
+  margin-top: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.insurance-strip {
+  background-color: #2f6f5f;   /* calm wellness green */
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.insurance-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.insurance-text {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.insurance-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.insurance-list li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+#services {
+  padding: 80px 20px;
+  background-color: #f7f9f8;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: #F2F0EF;
+  padding: 10px 10px;
+  text-align: center;
+  border:1px grey;
+  border-radius: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+  transition: transform 0.9s ease, box-shadow 0.9s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.service-details {
+  margin-top: 40px;
+  display: none;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.service-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.service-details li {
+  margin-bottom: 10px;
+}
+
+#clinicians {
+  padding: 80px 0;
+  background-color: #f8faf9;
+}
+
+.clinicians-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.clinician-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.clinician-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.clinician-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.clinician-info h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #2b3a3f;
+}
+
+.clinician-info span {
+  font-size: 0.9rem;
+  color: #6b7c80;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.clinician-info p {
+  font-size: 0.9rem;
+  color: #444;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.35s ease;
+}
+
+/* Hover Effects */
+.clinician-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+.clinician-card:hover .clinician-info p {
+  opacity: 1;
+  max-height: 120px;
+}
+.accreditations-section {
+  padding: 80px 6%;
+  background: #fafdfb;
+  text-align: center;
+}
+
+.accreditations-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section-intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.accreditation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.accreditation-card {
+  background: #ffffff;
+  padding: 30px 22px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accreditation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+}
+
+.accreditation-card img {
+  max-height: 60px;
+  margin-bottom: 18px;
+  opacity: 0.85;
+}
+
+.accreditation-card h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.accreditation-card p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+}
+/* Newsletter CTA */
+.newsletter-section {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 246, 0.95),
+    rgba(236, 244, 239, 0.95)
+  );
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.newsletter-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.newsletter-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2f3e34;
+}
+
+.newsletter-container p {
+  font-size: 1rem;
+  color: #4f5d54;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 12px 15px;
+  width: 260px;
+  border-radius: 6px;
+  border: 1px solid #cfd9d2;
+  font-size: 0.95rem;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: #6b8f71;
+}
+
+.newsletter-form button {
+  padding: 12px 24px;
+  background-color: #6b8f71;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #5a7c62;
+}
+
+.privacy-note {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #6c7a72;
+}
+.contact-section {
+  padding: 80px 6%;
+  background: #ffffff;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #d0d8d2;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6b8f71;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #6b8f71;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #5a7c62;
+}
+
+.contact-details {
+  text-align: left;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contact-details h4 {
+  margin-bottom: 12px;
+}
+
+.contact-details p {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.contact-form {
+  max-width: 720px;   /* sweet spot */
+  margin-left: 7rem;
+}
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 92%;
+  }
+}
+
+
+.site-footer {
+  background-color: #2f3f35;
+  color: #e4ebe6;
+  padding: 60px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-logo {
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+
+.site-footer h4 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.site-footer p {
+  line-height: 1.6;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site-footer ul li {
+  margin-bottom: 8px;
+}
+
+.site-footer a {
+  color: #cfd9d2;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-phone {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #b9c5be;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 15px;
+  }
+}
+
+
+/* TOP EMERGENCY BAR */
+.emergency-bar {
+  width: 100%;
+  background-color: #c62828;   /* calm emergency red */
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* CENTERED CONTENT */
+.emergency-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.emergency-logo img {
+  width: 90px;        /* desktop */
+  height: auto;      /* keeps proportions */
+  max-height: 64px;  /* prevents overflow */
+}
+
+/* EMERGENCY CALL */
+.emergency-call a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.emergency-number {
+  font-size: 1.05rem;   /* from 0.9 / 1.0 */
+  font-weight: 600;
+}
+.emergency-call a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* 1. Base / Desktop styles (already done) */
+/* -------------------------------------- */
+
+/* your full CSS here */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    width: 100%;
+    padding: 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #hero .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .services-grid,
+  .clinicians-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* 2. Tablet styles */
+@media (max-width: 992px) {
+  /* tablet adjustments */
+}
+
+
+/* 3. Mobile styles */
+@media (max-width: 768px) {
+  /* mobile adjustments */
+}
+
+
+/* 4. Small mobile (optional) */
+@media (max-width: 480px) {
+  /* very small screens */
+}
+/* Mobile menu labels */
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .menu ul {
+    gap: 1rem;
+    flex-wrap: wrap; /* allows clean wrap if needed */
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+}
